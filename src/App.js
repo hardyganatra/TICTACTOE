@@ -47,7 +47,7 @@ const Board = ({ setWinner }) => {
   const status = calcStatus(winner, squares, nextValue);
 
   const selectSquare = (squareIndex) => {
-    if (winner) {
+    if (winner || squares[squareIndex]) {
       return;
     } else {
       const squaresCopy = [...squares];

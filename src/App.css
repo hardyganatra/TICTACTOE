@@ -14,7 +14,7 @@ html,
 body {
   height: 100%;
   margin: 0px;
-  background-color: rgb(154, 166, 219);
+  background-color: rgb(101, 123, 223);
 }
 #root {
   /* display: flex;
@@ -56,10 +56,10 @@ body {
   margin: 25vh auto;
   z-index: 2;
   /*  */
-  background-color: rgba(68, 70, 168, 0.4);
+  background-color: rgba(73, 74, 148, 0.4);
   border-radius: 10px;
   backdrop-filter: blur(30px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
 }
 .board-row {
@@ -84,13 +84,13 @@ body {
 
 .restart {
   margin-top: 10px;
-  border: 2px solid rgb(25, 56, 158);
-
-  color: rgb(199, 103, 73);
+  border: 1px solid rgb(25, 56, 158);
+  color: whitesmoke;
   padding: 10px;
   font-size: 16px;
   border-radius: 4px;
   margin-bottom: 20px;
+  background-color: rgba(56, 44, 44, 0.226);
 }
 .title {
   background-color: rgba(56, 44, 44, 0.226);
@@ -101,6 +101,7 @@ body {
   font-weight: bold;
   padding: 10px;
   margin-bottom: 20px;
+  margin-top: 10px;
   border-radius: 20px;
 }
 .particles {

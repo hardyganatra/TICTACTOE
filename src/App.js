@@ -264,10 +264,11 @@ function App() {
           }}
         />
       )}
-
-      <div className="game-container">
-        <div className="title">Awesome Tic Tac Toe</div>
-        <Game setWinner={setWinner} />
+      <div className="main-container">
+        <div className="game-container">
+          <div className="title">Awesome Tic Tac Toe</div>
+          <Game setWinner={setWinner} />
+        </div>
       </div>
     </>
   );

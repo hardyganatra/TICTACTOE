@@ -1,4 +1,4 @@
-/* html {
+html {
   box-sizing: border-box;
 }
 html,
@@ -9,7 +9,7 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
-} */
+}
 html,
 body {
   height: 100%;
@@ -22,13 +22,8 @@ body {
   align-items: center; */
   height: 100vh;
 }
-.parent {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-\.game {
+
+.game {
   margin-top: 20px;
   min-height: 300px;
   /* border: 2px solid sandybrown; */
@@ -47,6 +42,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .game-container {
   width: 50%;
   display: flex;
@@ -54,6 +55,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 25vh auto;
+
   z-index: 2;
   /*  */
   background-color: rgba(73, 74, 148, 0.4);
@@ -106,4 +108,10 @@ body {
 }
 .particles {
   z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-container {
+    width: 70%;
+  }
 }

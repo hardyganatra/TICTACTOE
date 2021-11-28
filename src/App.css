@@ -14,11 +14,12 @@ html,
 body {
   height: 100%;
   margin: 0px;
+  background-color: rgb(154, 166, 219);
 }
 #root {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   height: 100vh;
 }
 .parent {
@@ -27,10 +28,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.center {
-  /* background-color: #ffff00; */
-}
-.game {
+\.game {
+  margin-top: 20px;
   min-height: 300px;
   /* border: 2px solid sandybrown; */
 }
@@ -38,10 +37,30 @@ body {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
+  background-color: rgba(56, 44, 44, 0.226);
+  color: whitesmoke;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
 }
 .container {
   display: flex;
   flex-direction: column;
+}
+.game-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25vh auto;
+  z-index: 2;
+  /*  */
+  background-color: rgba(68, 70, 168, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
 }
 .board-row {
   display: flex;
@@ -66,8 +85,24 @@ body {
 .restart {
   margin-top: 10px;
   border: 2px solid rgb(25, 56, 158);
-  background-color: grey;
-  color: antiquewhite;
-  padding: 5px;
+
+  color: rgb(199, 103, 73);
+  padding: 10px;
   font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.title {
+  background-color: rgba(56, 44, 44, 0.226);
+  color: whitesmoke;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.particles {
+  z-index: -1;
 }

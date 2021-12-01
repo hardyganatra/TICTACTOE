@@ -3,11 +3,18 @@ import React from "react";
 import Particles from "react-tsparticles";
 
 const Board = ({ setWinner }) => {
-  const [squares, setSquares] = React.useState(() => Array(9).fill(null));
+  const [squares, setSquares] = React.useState(() =>
+    localStorage.getItem("squares")
+      ? JSON.parse(localStorage.getItem("squares"))
+      : Array(9).fill(null)
+  );
+
   const calcNextValue = (squares) => {
     return squares.filter(Boolean).length % 2 === 0 ? "X" : "O";
   };
-
+  React.useEffect(() => {
+    localStorage.setItem("squares", JSON.stringify(squares));
+  }, [squares]);
   const calcWinner = (squares) => {
     const winningCombinations = [
       [0, 1, 2],
